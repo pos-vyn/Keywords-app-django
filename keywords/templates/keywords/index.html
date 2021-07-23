@@ -1,0 +1,12 @@
+{% extends 'keywords/base.html'%}
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+            <div class="form-group">
+            <label for="exampleInputEmail1">Keywrods</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Keywords" name='keywords'>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+{% endblock %}      
